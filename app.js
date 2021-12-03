@@ -9,11 +9,22 @@ const city = document.getElementById('city');
 const zipCode = document.getElementById('zipCode');
 const errorText = document.getElementsByClassName('er');
 const output = document.querySelector('.output');
+const body = document.querySelector('.container');
+// const consent = document.getElementById('switchValue');
+
+
+// var isChecked=document.getElementById("switchValue").checked;
+// console.log(isChecked);
+
+
 
 
 
 
 function print(){
+
+    // var isChecked=document.getElementById("switchValue").checked;
+    // console.log(isChecked);
 
     output.innerHTML = `<ul class="list-group list-group-flush text-center">
     <li class="list-group-item">Name: ${nameInput.value}</li>
@@ -31,6 +42,12 @@ function print(){
     </div>
     `;
     form.className = 'hide';
+    
+    var isChecked=document.getElementById("switchValue").checked;
+    
+    if(isChecked != true) {
+       body.classList.add('non-consent'); 
+    }
 }
 
 
@@ -75,23 +92,10 @@ form.addEventListener('submit', (e)=>{
 e.preventDefault();
 checkRequired([nameInput, email]);
 
-
-// if (nameInput.value === ''){
-//     console.log('failed');
-//     showError(nameInput, 'Please Enter In A Name');
-// }
-
-// if (email.value === ''){
-//     console.log('failed');
-//     showError(email, 'Please Enter In A Email');
-// }else if(!isValidEmail(email.value)) {
-//     showError(email, 'Please Enter In A Valid Email');
-// } else{
-//     console.log('success :)');
-
-// }
-
 });
+
+
+
 
 
 

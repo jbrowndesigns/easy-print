@@ -48,7 +48,7 @@ function print(){
     if(isChecked != true) {
        body.classList.add('non-consent'); 
     }
-    alert('Please show your info');
+    alert('Please present your phone to have your info entered. Afterwards you may close this window.');
 }
 
 

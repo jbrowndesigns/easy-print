@@ -22,7 +22,7 @@ const body = document.querySelector('.container');
 
 
 function print(){
-
+        
     // var isChecked=document.getElementById("switchValue").checked;
     // console.log(isChecked);
 
@@ -48,6 +48,7 @@ function print(){
     if(isChecked != true) {
        body.classList.add('non-consent'); 
     }
+    alert('Please show your info');
 }
 
 

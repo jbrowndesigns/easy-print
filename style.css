@@ -39,7 +39,7 @@ h1 {
 
 .btn {
   display: block;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 1.5rem 0;
   font-size: 1.2rem;
   width: clamp(12ch, 60%, 18ch);

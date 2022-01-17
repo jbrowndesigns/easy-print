@@ -18,7 +18,7 @@ const body = document.querySelector('.container');
 
 
 
-
+smoothscroll.polyfill();
 
 
 function print(){

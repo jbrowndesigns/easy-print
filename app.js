@@ -16,11 +16,6 @@ const body = document.querySelector('.container');
 // var isChecked=document.getElementById("switchValue").checked;
 // console.log(isChecked);
 
-
-
-smoothscroll.polyfill();
-
-
 function print(){
         
     // var isChecked=document.getElementById("switchValue").checked;

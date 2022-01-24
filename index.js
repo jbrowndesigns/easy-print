@@ -10,6 +10,34 @@ const heroText = document.querySelector('.hero');
 const heroButton = document.querySelector('.hero-button');
 const mediaQuery = window.matchMedia('(min-width: 600px)');
 
+
+smoothscroll.polyfill();
+
+
+document.addEventListener("click", e => {
+  const target = e.target;
+  
+  if (!target.classList.contains("js-smooth-scroll")) return;
+  e.preventDefault();
+  const targetId = target.hash;
+  const targetElement = document.querySelector(targetId);
+
+  const rectTop = targetElement.getBoundingClientRect().top;
+
+  const offsetTop = window.pageYOffset;
+  
+  const buffer = 50;
+  const top = rectTop + offsetTop - buffer;
+
+  window.scrollTo({
+    top,
+    behavior: "smooth"
+  });
+});
+
+
+
+
 // Function to change background image and disable link button
 
 if (mediaQuery.matches){

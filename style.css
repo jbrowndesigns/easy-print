@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 .hero-text {
@@ -80,7 +80,7 @@ h1 {
 }
 
 #mini-nav {
-  display: none;
+  /* display: none; */
 }
 
 .carousel {
@@ -97,12 +97,8 @@ h1 {
 
 #images img {
   aspect-ratio: 16/9;
-  /* height: 500px; */
   height: 80vh;
   min-width: 100%;
-  /* width: 100%;
-  height: auto; */
-  /* object-fit: cover; */
   object-fit: contain;
 }
 
@@ -113,18 +109,28 @@ h1 {
   justify-content: space-between;
 }
 
+.h-container {
+  display: flex;
+  padding-top: 0.5rem;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
 #left,
+#middle,
 #right {
   background: #000;
   font-size: 1.2rem;
   color: #fff;
   border: none;
-  padding: 1rem 3em;
+  padding: 0.5rem 2em;
   position: relative;
 }
-.return {
+
+/* .return {
   margin-top: 0.5rem;
-}
+} */
 
 .footer {
   height: 25px;
@@ -132,11 +138,17 @@ h1 {
   background: #fff;
 }
 /* DESKTOP */
-@media screen and (min-width: 1000px) {
+/* 
+
+Take photos in a 4/3 aspect ratio.
+Add a function to swap out photos once the query is triggered to swap from 16/9 to 4/3.
+
+*/
+/* @media screen and (min-width: 1200px) {
   #images img {
     aspect-ratio: 4/3;
     width: 100%;
     height: auto;
     object-fit: contain;
   }
-}
+} */

@@ -39,9 +39,9 @@ document.addEventListener("click", e => {
 
 // Function to change background image and disable link button
 
-if (mediaQuery.matches){
-  disableSite();
-}
+// if (mediaQuery.matches){
+//   disableSite();
+// }
 
 toastGenerator.addEventListener('click', ()=> createToast());
 
@@ -85,11 +85,11 @@ prev.addEventListener('click', ()=>{
 
 
 // Disable Site
-function disableSite(){
+// function disableSite(){
 
-  heroImg.style.backgroundImage = "url(images/underConstruction.jpg)";
-  heroButton.classList.add('disabled');
-  heroText.innerText = 'Please view on a mobile device';
-  heroText.style.textShadow = '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000';
+//   heroImg.style.backgroundImage = "url(images/underConstruction.jpg)";
+//   heroButton.classList.add('disabled');
+//   heroText.innerText = 'Please view on a mobile device';
+//   heroText.style.textShadow = '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000';
 
-}
+// }

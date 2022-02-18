@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 .hero-container-vday {
@@ -91,7 +91,7 @@ h1 {
 }
 
 #mini-nav {
-  display: none;
+  /* display: none; */
 }
 
 .carousel {

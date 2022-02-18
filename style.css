@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* display: none; */
+  display: none;
 }
 
 .hero-container-vday {
@@ -91,7 +91,7 @@ h1 {
 }
 
 #mini-nav {
-  /* display: none; */
+  display: none;
 }
 
 .carousel {
@@ -107,7 +107,7 @@ h1 {
 }
 
 #images img {
-  aspect-ratio: 16/9;
+  aspect-ratio: 1;
   /* height: 70vh; */
   min-width: 100%;
   object-fit: contain;
@@ -155,11 +155,12 @@ Take photos in a 4/3 aspect ratio.
 Add a function to swap out photos once the query is triggered to swap from 16/9 to 4/3.
 
 */
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 761px) {
   #images img {
-    aspect-ratio: 4/3;
+    /* aspect-ratio: 4/3; */
     width: 100%;
-    height: auto;
+    height: 70vh;
+    /* height: auto; */
     object-fit: contain;
   }
-} */
+}

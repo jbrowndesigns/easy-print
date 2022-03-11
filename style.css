@@ -15,6 +15,16 @@ body {
   background: #000;
 }
 
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+
 .hero-container {
   height: 100vh;
   width: 100vw;
@@ -45,7 +55,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-h1 {
+.hero-text h1 {
   color: #fff;
 }
 
@@ -74,8 +84,8 @@ h1 {
 
 .bread {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  right: 0;
   padding: 5px 10px;
   text-transform: uppercase;
   background: #fff;
@@ -115,7 +125,7 @@ h1 {
 
 .buttons-container {
   display: flex;
-  padding-top: 0.5rem;
+  padding-top: 2rem;
   gap: 1rem;
   justify-content: space-between;
 }
@@ -135,6 +145,7 @@ h1 {
   font-size: 1.2rem;
   color: #fff;
   border: none;
+  border-radius: 10px;
   padding: 0.5rem 2em;
   position: relative;
 }
@@ -143,11 +154,17 @@ h1 {
   margin-top: 0.5rem;
 } */
 
-.footer {
-  height: 25px;
-  width: 100vw;
-  background: #fff;
+.faux-footer {
+  padding-top: 1rem;
 }
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 2em;
+  justify-content: center;
+}
+
 /* DESKTOP */
 /* 
 

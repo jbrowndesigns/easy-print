@@ -49,7 +49,7 @@ function createToast(){
   console.log('Toasting');
   const note = document.createElement('div')
   note.classList.add('bread')
-  note.innerHTML = 'unaffiliated website created by JBrown Designs';
+  note.innerHTML = 'unaffiliated website created by Justin Brown';
   toaster.appendChild(note);
   setTimeout(()=> {
     note.remove()

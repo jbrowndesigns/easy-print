@@ -1,10 +1,12 @@
 const form = document.getElementById('form');
-const nameInput = document.getElementById('name');
+const nameInput1 = document.getElementById('firstName');
+const nameInput2 = document.getElementById('lastName');
 const email = document.getElementById('email');
 const birthday = document.getElementById('birthday');
 const phone = document.getElementById('phone');
 const address = document.getElementById('address');
 const province = document.getElementById('province');
+const state = document.getElementById('state');
 const city = document.getElementById('city');
 const zipCode = document.getElementById('zipCode');
 const errorText = document.getElementsByClassName('er');
@@ -22,14 +24,16 @@ function print(){
     // console.log(isChecked);
 
     output.innerHTML = `<ul class="list-group list-group-flush text-center">
-    <li class="list-group-item">Name: ${nameInput.value}</li>
-    <li class="list-group-item">Address: ${address.value}</li>
-    <li class="list-group-item">Province: ${province.value}</li>
-    <li class="list-group-item">City: ${city.value}</li>
-    <li class="list-group-item">Zip: ${zipCode.value}</li>
-    <li class="list-group-item">Phone: ${phone.value}</li>
-    <li class="list-group-item">Email: ${email.value}</li>
-    <li class="list-group-item">Birthday Month: ${birthday.value}</li>
+    <li class="list-group-item">Last Name- ${nameInput2.value}</li>
+    <li class="list-group-item">First Name- ${nameInput1.value}</li>
+    <li class="list-group-item">Province- ${province.value}</li>
+    <li class="list-group-item">State- ${state.value}</li>
+    <li class="list-group-item">City- ${city.value}</li>
+    <li class="list-group-item">Zip- ${zipCode.value}</li>
+    <li class="list-group-item">Address- ${address.value}</li>
+    <li class="list-group-item">Phone- ${phone.value}</li>
+    <li class="list-group-item">Email- ${email.value}</li>
+    <li class="list-group-item">Birthday Month- ${birthday.value}</li>
     
     </ul>
     <div class="d-grid mt-3">
@@ -43,7 +47,7 @@ function print(){
     if(isChecked != true) {
        body.classList.add('non-consent'); 
     }
-    alert('Please present your phone to have your info entered. Afterwards you may close this window.');
+    // alert('Please present your phone to have your info entered. Afterwards you may close this window.');
 }
 
 
@@ -86,7 +90,7 @@ function getFieldName(input){
 
 form.addEventListener('submit', (e)=>{
 e.preventDefault();
-checkRequired([nameInput, email]);
+checkRequired([nameInput1, nameInput2, email]);
 
 });
 

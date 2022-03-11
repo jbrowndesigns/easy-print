@@ -125,7 +125,7 @@ body {
 
 .buttons-container {
   display: flex;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   gap: 1rem;
   justify-content: space-between;
 }
@@ -150,9 +150,9 @@ body {
   position: relative;
 }
 
-/* .return {
-  margin-top: 0.5rem;
-} */
+.return {
+  margin-top: 1rem;
+}
 
 .faux-footer {
   padding-top: 1rem;

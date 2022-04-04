@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Choo Cabazon</title>
 </head>
 <body>
@@ -21,41 +21,42 @@
     </div>
   </div>
   <div class="container" id="mini-nav">
-    <a href="#browse" class="js-smooth-scroll btn btn-primary">Browse Shoes</a>
-    <a href="accessories.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Browse Accessories</a>
-    <button type="button" class="btn btn-primary disabled">Browse Seasonal</button>
-    <a href="v-day.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Newest Arrivals</a>
+    <h2>Quick Browse Shoes</h2>
+    <a href="#browse" class="js-smooth-scroll btn btn-primary">Browse</a>
+    <h2>Quick Browse Accessories</h2>
+    <a href="accessories.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Browse</a>
+    <!-- <button type="button" class="btn btn-primary disabled">Browse Seasonal</button> -->
+    <h2>View Styles Gallery</h2>
+    <a href="gallery.html" class="btn btn-primary" rel="noopener noreferrer">Browse</a>
   </div>
   <div class="container" id="browse">
     <div class="carousel">
       <div class="image-container" id="images">
-        <img src="images/1.jpg" alt="Women's Heels 1">
-        <img src="images/2.jpg" alt="Women's Heels 2">
-        <img src="images/3.jpg" alt="Women's Heels 3">
-        <img src="images/4.jpg" alt="Women's Heels 4">
-        <img src="images/5.jpg" alt="Women's Boots 1">
-        <img src="images/6.jpg" alt="Women's Boots 2">
-        <img src="images/7.jpg" alt="Women's Athletics">
-        <img src="images/8.jpg" alt="Men's Shoes">
+        <img src="images/salesFloor/heels1.jpg" alt="Women's Heels 1">
+        <img src="images/salesFloor/heels2.jpg" alt="Women's Heels 2">
+        <img src="images/salesFloor/heels3.jpg" alt="Women's Heels 3">
+        <img src="images/salesFloor/heels4.jpg" alt="Women's Heels 4">
+        <img src="images/salesFloor/boots1.jpg" alt="Women's Boots 1">
+        <img src="images/salesFloor/boots2.jpg" alt="Women's Boots 2">
+        <img src="images/salesFloor/sneakers1.jpg" alt="Women's Athletics 1">
+        <img src="images/salesFloor/sneakers2.jpg" alt="Women's Athletics 2">
+        <img src="images/salesFloor/mens.jpg" alt="Men's Shoes">
       </div>
     </div>
-    <!-- <div class="buttons-container">
-      <button id="left"><i class="fas fa-arrow-alt-circle-left"></i></button>
-      <a href="#mini-nav" class="js-smooth-scroll"><button id="middle"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
-      <button id="right"><i class="fas fa-arrow-alt-circle-right"></i></button>
-    </div>
-    <div class="h-container">
-      <h4>Left</h4>
-      <h4>Top</h4>
-      <h4>Right</h4>
-    </div> -->
-    
     <div class="buttons-container">
-    <button id="left">Prev</button>
-    <button id="right">Next</button>
-  </div>
-  <a href="#mini-nav" class="js-smooth-scroll btn btn-primary return">Back To Top <i class="fas fa-arrow-alt-circle-up"></i></a>  
-  <div class="faux-footer">
+      <button id="left">Prev</button>
+      <button id="right">Next</button>
+    </div>
+  <!-- <a href="#mini-nav" class="js-smooth-scroll btn btn-primary return">Back To Top <i class="fas fa-arrow-alt-circle-up"></i></a>   -->
+  <footer>
+    <div class="icons">
+      <div><a href="mailto:cabazon@jimmychoo.com?subject=Choo%20Cabazon%20Website:&body=Dear Justin,"><i class="fa-solid fa-envelope"></i></a></div>
+      <div><a href="https://www.instagram.com/jimmychoo/"><i class="fa-brands fa-instagram"></i></a></div>
+      <div><a href="tel:+19519224701"><i class="fa-solid fa-phone"></i></a></div>
+    </div>
+    <h4>Jimmy Choo Cabazon Outlet</h4>
+  </footer>
+  <!-- <div class="faux-footer">
     <div class="icons">
       <div><a href="mailto:cabazon@jimmychoo.com?subject=Choo%20Cabazon%20Website:&body=Dear Justin,"><i class="fa-solid fa-envelope"></i></a></div>
       <div><a href="https://www.instagram.com/jimmychoo/"><i class="fa-brands fa-instagram"></i></a></div>
@@ -63,8 +64,9 @@
     </div>
     <h4>Jimmy Choo Cabazon Outlet</h4>
   </div> 
-</div>
+</div> -->
   <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 </html>

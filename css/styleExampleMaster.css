@@ -52,7 +52,6 @@ img {
   top: 0;
 }
 
-
 .style-details {
   padding-top: 100px;
   text-align: center;
@@ -69,7 +68,10 @@ img {
 }
 
 .style-details li {
-  text-align: left;
+  text-align: center;
+}
+.details {
+  text-align: start;
 }
 
 .faux-footer {
@@ -116,6 +118,10 @@ img {
     grid-area: side;
     padding: 400px 0 0 100px;
     position: fixed;
+  }
+
+  .style-details li {
+    text-align: left;
   }
 
   .photos {

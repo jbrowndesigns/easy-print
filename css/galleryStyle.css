@@ -38,6 +38,10 @@ p {
   margin: 3rem 0;
 }
 
+.center {
+  text-align: center;
+}
+
 .navbar {
   width: 100vw;
   padding-top: 1rem;
@@ -88,9 +92,19 @@ cursor: initial;
   max-width: 150px;
 }
 
+#style-height {
+  font-style: italic;
+  font-size: .8rem;
+  }
+
 #price {
-  display: none;
+  /* display: none; */
   font-size: 10px;
+}
+#sale {
+  font-size: 10px;
+  color: red;
+
 }
 
 .faux-footer {

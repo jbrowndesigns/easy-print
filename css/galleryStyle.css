@@ -67,6 +67,7 @@ cursor: initial;
 }
 
 .new-arrivals,
+.wedges,
 .heels,
 .flats,
 .slides,
@@ -130,6 +131,7 @@ cursor: initial;
 /* Laptop+ */
 @media (min-width: 900px) {
   .new-arrivals,
+  .wedges,
   .heels,
   .flats,
   .slides,

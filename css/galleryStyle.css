@@ -126,6 +126,10 @@ cursor: initial;
     height: 150px;
     width: 150px;
   }
+
+  .height {
+    margin-top: 1rem;
+  }
 }
 
 /* Laptop+ */

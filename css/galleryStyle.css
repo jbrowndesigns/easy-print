@@ -66,6 +66,41 @@ cursor: initial;
   padding-top: 1rem;
 }
 
+/* Ready to wear CSS designed to be mobile first */
+
+.shirts {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+  gap: 10rem;
+  justify-content: center;
+  padding: 1rem 5rem;
+}
+
+.media-scroller {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
+}
+
+.media-element{
+  padding: 1rem 0;
+}
+
+.media-element > img {
+  width: 500px;
+}
+
+.details {
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .new-arrivals,
 .wedges,
 .heels,
@@ -121,7 +156,7 @@ cursor: initial;
 }
 
 /* Mobile */
-@media screen {
+@media screen and (max-width: 899px){
   img {
     height: 150px;
     width: 150px;
@@ -130,6 +165,39 @@ cursor: initial;
   .height {
     margin-top: 1rem;
   }
+
+  .shirts {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    gap: .5rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  
+  }
+
+  .media-element{
+    padding: 1rem 0;
+  }
+
+  .media-element > img {
+    height: 400px;
+    width: 300px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 /* Laptop+ */
@@ -144,7 +212,7 @@ cursor: initial;
   .mens {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
-  img {
+  .style > a > img {
     height: auto;
     width: auto;
     max-height: 300px;

@@ -72,7 +72,7 @@ cursor: initial;
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 525px));
   gap: 10rem;
   justify-content: center;
   padding: 1rem 5rem;
@@ -83,10 +83,11 @@ cursor: initial;
   gap: 1rem;
   grid-auto-flow: column;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .media-element{
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .media-element > img {
@@ -168,7 +169,8 @@ cursor: initial;
 
   .shirts {
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 335px);
+    /* Org. 300px^ */
     gap: 1rem;
     justify-content: center;
     padding: 2rem;
@@ -177,7 +179,8 @@ cursor: initial;
   .media-scroller {
     display: grid;
     grid-auto-flow: column;
-    gap: .5rem;
+    gap: 1rem;
+    /* Org .5rem^ */
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   

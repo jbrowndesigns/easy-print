@@ -4,8 +4,20 @@
   padding: 0;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
+  height: 0.3em;
   width: 0.3em;
+} */
+
+::-webkit-scrollbar {
+  height: 10px;              
+  width: 4px;              
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background-color: #000;
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
@@ -13,7 +25,10 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  /* background-color: darkgrey;
+  outline: 1px solid slategrey; */
+  background-color: #000;
+  /* border-radius: 10px; */
   outline: 1px solid slategrey;
 }
 
@@ -66,7 +81,7 @@ cursor: initial;
   padding-top: 1rem;
 }
 
-/* Ready to wear CSS designed to be mobile first */
+/* Media scroller was designed to be mobile first */
 
 .shirts {
   max-width: 1440px;
@@ -100,6 +115,16 @@ cursor: initial;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > .media-element {
+  scroll-snap-align: start;
+}
+
+/* End of media scroller */
 
 
 .new-arrivals,
@@ -176,6 +201,8 @@ cursor: initial;
     padding: 2rem;
   }
   
+  /* Media scroller */
+
   .media-scroller {
     display: grid;
     grid-auto-flow: column;
@@ -200,7 +227,7 @@ cursor: initial;
     flex-direction: row;
     justify-content: space-between;
   }
-
+ /* End of media scroller */
 }
 
 /* Laptop+ */

@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-/* body::-webkit-scrollbar {
-  height: 0.3em;
-  width: 0.3em;
-} */
-
 ::-webkit-scrollbar {
   height: 10px;              
   width: 4px;              
@@ -17,7 +12,6 @@
 
 ::-webkit-scrollbar-thumb:horizontal{
   background-color: #000;
-  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
@@ -25,10 +19,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  /* background-color: darkgrey;
-  outline: 1px solid slategrey; */
   background-color: #000;
-  /* border-radius: 10px; */
   outline: 1px solid slategrey;
 }
 
@@ -81,84 +72,20 @@ cursor: initial;
   padding-top: 1rem;
 }
 
-/* Ready to wear & accessories pages */
-/* Media scroller was designed to be mobile first */
-
-.shirts {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 525px));
-  gap: 10rem;
-  justify-content: center;
-  padding: 1rem 5rem;
-}
-
-.media-scroller {
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-}
-
-.media-element{
-  padding: 2rem 0;
-}
-
-.media-element > img {
-  width: 500px;
-}
-
-.details {
-  font-size: 1.1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.snaps-inline {
-  scroll-snap-type: inline mandatory;
-}
-
-.snaps-inline > .media-element {
-  scroll-snap-align: start;
-}
-
-/* End of media scroller */
-
-
-.new-arrivals,
-.wedges,
-.heels,
-.flats,
-.slides,
-.sporty,
-.boots,
-.mens {
+.accessories {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   display: grid;
-  gap: 1rem;
+  gap: 5rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
-.style {
-  justify-self: center;
-}
-
-.info {
+.flex-column {
   display: flex;
   flex-direction: column;
-  max-width: 150px;
 }
-
-#style-height {
-  font-style: italic;
-  font-size: .8rem;
-  }
 
 #price {
   /* display: none; */
@@ -167,7 +94,6 @@ cursor: initial;
 #sale {
   font-size: 10px;
   color: red;
-
 }
 
 .faux-footer {
@@ -182,32 +108,69 @@ cursor: initial;
   justify-content: center;
 }
 
-/* Mobile */
+
+/***************************** Media Scroller */
+
+.media-scroller {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller-details {
+padding-top: 1rem;
+}
+
+.media-element{
+  padding: 2rem 0 1rem 0;
+}
+
+.media-element > img {
+  width: 500px;
+}
+
+.details {
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > .media-element {
+  scroll-snap-align: start;
+}
+
+/********************** End of media scroller */
+
+/************************************** Mobile */
 @media screen and (max-width: 899px){
-  img {
+  .media-scroller img {
     height: 150px;
     width: 150px;
   }
 
+.accessories {
+  gap: 1rem 5rem;
+}
+
+
+  /* ?? */
   .height {
     margin-top: 1rem;
   }
 
   /* Media scroller */
 
-  .shirts {
-    display: grid;
-    grid-template-columns: repeat(1, 335px);
-    /* Org. 300px^ */
-    gap: 1rem;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .media-scroller {
+  /* .media-scroller {
     display: grid;
     grid-auto-flow: column;
     gap: 1rem;
-    /* Org .5rem^ */
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   
@@ -227,31 +190,31 @@ cursor: initial;
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .accessories .media-element > img {
+    height: 175px;
+    width: 175px;
+    aspect-ratio: 1/1;
+  } */
+
  /* End of media scroller */
 }
 
 /* Laptop+ */
 @media (min-width: 900px) {
-  .new-arrivals,
-  .wedges,
-  .heels,
-  .flats,
-  .slides,
-  .sporty,
-  .boots,
-  .mens {
+.accessories {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
-  .style > a > img {
+  .accessories img {
     height: auto;
     width: auto;
     max-height: 300px;
     max-width: 300px;
   }
-
+/* 
   .info {
     flex-direction: row;
     justify-content: space-between;
     max-width: 300px;
-  }
+  } */
 }

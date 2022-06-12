@@ -158,7 +158,10 @@ padding-top: 1rem;
 .accessories {
   gap: 1rem 5rem;
 }
-
+ /* Testing to show x-scroll bar */
+.flex-column {
+  white-space: nowrap;
+}
 
   /* ?? */
   .height {

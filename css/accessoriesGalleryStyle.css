@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: inherit;
 }
 
@@ -22,29 +22,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #000;
-  outline: 1px solid slategrey;
-} */
-
-.media-scroller::-webkit-scrollbar {
-  display: inherit;
-}
-
-.media-scroller::-webkit-scrollbar {
-  height: 10px;              
-  width: 4px;              
-  border: 1px solid #d5d5d5;
-}
-
-.media-scroller::-webkit-scrollbar-thumb:horizontal{
-  background-color: #000;
-}
-
-.media-scroller::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.media-scroller::-webkit-scrollbar-thumb {
   background-color: #000;
   outline: 1px solid slategrey;
 }
@@ -175,14 +152,18 @@ padding-top: 1rem;
 /********************** End of media scroller */
 
 /************************************** Mobile */
-@media screen and (max-width: 800px){
+@media screen and (max-width: 706px){
+  .accessories {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
   .media-scroller img {
     height: 150px;
     width: 150px;
   }
 
 .accessories {
-  gap: 1rem 3rem;
+  gap: 1rem 1.5rem;
 }
  /* Testing to show x-scroll bar */
 .flex-column {
@@ -196,16 +177,16 @@ padding-top: 1rem;
 
   /* Media scroller */
 
-  /* .media-scroller {
+  .media-scroller {
     display: grid;
     grid-auto-flow: column;
-    gap: 1rem;
+    gap: .5rem;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   
   }
 
-  .media-element{
+  /* .media-element{
     padding: 1rem 0;
   }
 
@@ -230,9 +211,10 @@ padding-top: 1rem;
 }
 
 /* Laptop+ */
-@media (min-width: 801px) {
+@media (min-width: 707px) {
 .accessories {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: scroll;
   }
   .accessories img {
     height: auto;

@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  display: inherit;
+}
 
 ::-webkit-scrollbar {
   height: 10px;              

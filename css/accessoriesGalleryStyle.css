@@ -139,6 +139,7 @@ padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: default;
 }
 
 .snaps-inline {
@@ -181,8 +182,9 @@ padding-top: 1rem;
     display: grid;
     grid-auto-flow: column;
     gap: .5rem;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     overscroll-behavior-inline: contain;
+    overflow-x: scroll;
   
   }
 
@@ -214,7 +216,6 @@ padding-top: 1rem;
 @media (min-width: 707px) {
 .accessories {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    overflow: scroll;
   }
   .accessories img {
     height: auto;

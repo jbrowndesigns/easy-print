@@ -5,13 +5,19 @@
 }
 ::-webkit-scrollbar {
   display: inherit;
-}
-
-::-webkit-scrollbar {
+  overflow-x: scroll;
+  scrollbar-color: green;
+  scrollbar-width: 3px;
   height: 10px;              
   width: 4px;              
   border: 1px solid #d5d5d5;
 }
+
+/* ::-webkit-scrollbar {
+  height: 10px;              
+  width: 4px;              
+  border: 1px solid #d5d5d5;
+} */
 
 ::-webkit-scrollbar-thumb:horizontal{
   background-color: #000;

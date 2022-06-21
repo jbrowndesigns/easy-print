@@ -4,9 +4,8 @@
   padding: 0;
 }
 ::-webkit-scrollbar {
-  display: inherit;
+  display: block;
   overflow-x: scroll;
-  scrollbar-color: green;
   scrollbar-width: 3px;
   height: 10px;              
   width: 4px;              
@@ -124,8 +123,9 @@ cursor: initial;
   display: grid;
   gap: 1.5rem;
   grid-auto-flow: column;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
+  /* overflow-x: auto;
+  overscroll-behavior-inline: contain; */
+  overflow-x: scroll;
 }
 
 .media-scroller-details {

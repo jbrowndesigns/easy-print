@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 ::-webkit-scrollbar {
   display: block;
   overflow-x: scroll;
@@ -11,26 +12,12 @@
   width: 4px;              
   border: 1px solid #d5d5d5;
 }
-.media-scroller::-webkit-scrollbar {
-  display: block;
-  overflow-x: scroll;
-  scrollbar-width: 3px;
-  height: 10px;              
-  width: 4px;              
-  border: 1px solid #d5d5d5;
-}
 
-/* ::-webkit-scrollbar {
-  height: 10px;              
-  width: 4px;              
-  border: 1px solid #d5d5d5;
-} */
-
-/* ::-webkit-scrollbar-thumb:horizontal{
+::-webkit-scrollbar-thumb:horizontal{
   background-color: #000;
 }
 
-body::-webkit-scrollbar-track {
+/* body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -131,9 +118,8 @@ cursor: initial;
   display: grid;
   gap: 1.5rem;
   grid-auto-flow: column;
-  /* overflow-x: auto;
-  overscroll-behavior-inline: contain; */
-  overflow: scroll;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .media-scroller-details {
@@ -180,19 +166,14 @@ padding-top: 1rem;
 .accessories {
   gap: 1rem 1.5rem;
 }
- /* Testing to show x-scroll bar */
+
 .flex-column {
   white-space: wrap;
 }
 
-  /* ?? */
-  .height {
-    margin-top: 1rem;
-  }
+  /****************** Media scroller */
 
-  /* Media scroller */
-
-  .media-scroller {
+.media-scroller {
     display: grid;
     grid-auto-flow: column;
     gap: .5rem;
@@ -202,21 +183,40 @@ padding-top: 1rem;
   
   }
 
+.media-scroller::-webkit-scrollbar {
+    display: block;
+    overflow: scroll;
+    width: 5px;
+    height: 8px;
+    scrollbar-width: 10px;
+    scrollbar-color: green;
+  }
+.flex-column::-webkit-scrollbar{
+    display: block;
+    overflow: scroll;
+    scrollbar-width: 10px;
+    scrollbar-color: green;
+  }
+
+.flex-column::-webkit-scrollbar-thumb{
+    color: green;
+  }
+  .media-scroller::-webkit-scrollbar-thumb{
+color: green;
+  }
+
   /* .media-element{
     padding: 1rem 0;
   }
-
   .media-element > img {
     height: 400px;
     width: 300px;
   }
-
   .details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
   .accessories .media-element > img {
     height: 175px;
     width: 175px;

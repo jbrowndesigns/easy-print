@@ -130,7 +130,7 @@ font-weight: bold;
 
   .style-details h3, .style-details li {
     word-wrap: break-word;
-    max-width: 275px;
+    max-width: 250px;
     text-align: left;
   }
 

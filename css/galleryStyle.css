@@ -183,9 +183,9 @@ cursor: initial;
 /* Mobile */
 @media screen and (max-width: 899px){
   img {
-    /* height: 150px;
-    width: 150px; */
-    aspect-ratio: 9/16;
+    height: 150px;
+    width: 150px;
+    /* aspect-ratio: 9/16; */
   }
 
   .height {

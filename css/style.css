@@ -117,7 +117,8 @@ body {
   grid-template-areas: 
   "womensG mensG"
   "accessoriesG RDWG";
-  gap: 1rem;                    
+  align-content: center;
+  gap: 4rem;                    
 }
  #mini-nav img {
   height: auto;
@@ -155,6 +156,9 @@ body {
     height: 250px;
     width: 250px;
   }
+  #mini-nav{
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 555px) {
@@ -162,6 +166,9 @@ body {
   .womensG, .mensG, .accessoriesG, .RDWG {
     height: 175px;
     width: 175px;
+  }
+  #mini-nav{
+    gap: 1.5rem;
   }
 }
 

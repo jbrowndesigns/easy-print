@@ -168,7 +168,7 @@ body {
     width: 175px;
   }
   #mini-nav{
-    gap: 1.5rem;
+    gap: 5rem 1.5rem;
   }
 }
 

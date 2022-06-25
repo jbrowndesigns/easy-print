@@ -17,7 +17,6 @@
 
 ::-webkit-scrollbar-thumb:horizontal{
   background-color: #000;
-  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
@@ -25,10 +24,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  /* background-color: darkgrey;
-  outline: 1px solid slategrey; */
   background-color: #000;
-  /* border-radius: 10px; */
   outline: 1px solid slategrey;
 }
 
@@ -81,7 +77,7 @@ cursor: initial;
   padding-top: 1rem;
 }
 
-/* Ready to wear & accessories pages */
+/**************************************************************** READY TO WEAR */
 /* Media scroller was designed to be mobile first */
 
 .shirts {
@@ -89,14 +85,14 @@ cursor: initial;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 525px));
-  gap: 10rem;
+  gap: 4rem 8rem;
   justify-content: center;
   padding: 1rem 5rem;
 }
 
 .media-scroller {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-auto-flow: column;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -107,7 +103,9 @@ cursor: initial;
 }
 
 .media-element > img {
-  width: 500px;
+  /* max-height: 650px;
+  max-width: 500px; */
+  aspect-ratio: 9/16;
 }
 
 .details {
@@ -125,7 +123,7 @@ cursor: initial;
   scroll-snap-align: start;
 }
 
-/* End of media scroller */
+/******************************** End of media scroller */
 
 
 .new-arrivals,
@@ -185,8 +183,9 @@ cursor: initial;
 /* Mobile */
 @media screen and (max-width: 899px){
   img {
-    height: 150px;
-    width: 150px;
+    /* height: 150px;
+    width: 150px; */
+    aspect-ratio: 9/16;
   }
 
   .height {

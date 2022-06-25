@@ -107,9 +107,64 @@ body {
   /* display: none; */
 }
 
-#mini-nav .btn {
+/* #mini-nav .btn {
   border-radius: 10px;
+} */
+
+#mini-nav {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "womensG mensG"
+  "accessoriesG RDWG";
+  gap: 1rem;                    
 }
+ #mini-nav img {
+  height: auto;
+  width: 100%;
+ }
+
+.womensG {
+  grid-area: womensG;
+  height: 350px;
+  width: 350px;
+}
+
+.mensG {
+  grid-area: mensG;
+  height: 350px;
+  width: 350px;
+}
+
+.accessoriesG{
+  grid-area: accessoriesG;
+  height: 350px;
+  width: 350px;
+}
+
+.RDWG {
+  grid-area: RDWG;
+  height: 350px;
+  width: 350px;
+}
+
+/******************* HOT FIX NEEDS TO BE FLUID RESPONSIVE  */
+@media (max-width: 800px) {
+
+  .womensG, .mensG, .accessoriesG, .RDWG {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 555px) {
+
+  .womensG, .mensG, .accessoriesG, .RDWG {
+    height: 175px;
+    width: 175px;
+  }
+}
+
 
 .carousel {
   width: 100%;

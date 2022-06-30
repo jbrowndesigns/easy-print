@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding);
+}
+
 /* body::-webkit-scrollbar {
   height: 0.3em;
   width: 0.3em;

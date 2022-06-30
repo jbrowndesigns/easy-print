@@ -12,6 +12,7 @@ const zipCode = document.getElementById('zipCode');
 const errorText = document.getElementsByClassName('er');
 const output = document.querySelector('.output');
 const body = document.querySelector('.container');
+
 // const consent = document.getElementById('switchValue');
 
 
@@ -19,7 +20,7 @@ const body = document.querySelector('.container');
 // console.log(isChecked);
 
 function print(){
-        
+    
     // var isChecked=document.getElementById("switchValue").checked;
     // console.log(isChecked);
 
@@ -37,7 +38,7 @@ function print(){
     
     </ul>
     <div class="d-grid mt-3">
-    <button onClick="window.location.reload();" class="btn btn-primary">Reset</button>
+    <button onClick="window.location.reload();" class="btn btn-primary disabled">Clear Info</button>
     </div>
     `;
     form.className = 'hide';
@@ -47,6 +48,12 @@ function print(){
     if(isChecked != true) {
        body.classList.add('non-consent'); 
     }
+    const resetButton = document.querySelector('.disabled');
+    setTimeout(()=>{
+        resetButton.classList.remove('disabled');
+    }, 2000);
+    
+
     // alert('Please present your phone to have your info entered. Afterwards you may close this window.');
 }
 

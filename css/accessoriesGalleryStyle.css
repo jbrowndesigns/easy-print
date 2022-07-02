@@ -10,9 +10,6 @@ html {
 }
 
 ::-webkit-scrollbar {
-  display: block;
-  overflow-x: scroll;
-  scrollbar-width: 3px;
   height: 10px;              
   width: 4px;              
   border: 1px solid #d5d5d5;

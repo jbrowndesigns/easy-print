@@ -9,11 +9,6 @@ html {
   scroll-padding-top: var(--scroll-padding);
 }
 
-/* body::-webkit-scrollbar {
-  height: 0.3em;
-  width: 0.3em;
-} */
-
 ::-webkit-scrollbar {
   height: 10px;              
   width: 4px;              
@@ -22,15 +17,6 @@ html {
 
 ::-webkit-scrollbar-thumb:horizontal{
   background-color: #000;
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #000;
-  outline: 1px solid slategrey;
 }
 
 body {
@@ -82,8 +68,8 @@ cursor: initial;
   padding-top: 1rem;
 }
 
-/**************************************************************** READY TO WEAR */
-/* Media scroller was designed to be mobile first */
+/**************************************************** READY TO WEAR */
+/************** Media scroller was designed to be mobile first */
 
 .shirts {
   max-width: 1440px;
@@ -185,7 +171,7 @@ cursor: initial;
   justify-content: center;
 }
 
-/* Mobile */
+/********************************************** Mobile QUERY */
 @media screen and (max-width: 899px){
   img {
     height: 150px;
@@ -197,7 +183,7 @@ cursor: initial;
     margin-top: 1rem;
   }
 
-  /* Media scroller */
+  /******************************* Media scroller */
 
   .shirts {
     display: grid;
@@ -207,6 +193,11 @@ cursor: initial;
     justify-content: center;
     padding: 2rem;
   }
+
+  .shirts img {
+    object-fit: cover;
+  }
+
   .media-scroller {
     display: grid;
     grid-auto-flow: column;
@@ -231,10 +222,10 @@ cursor: initial;
     flex-direction: column;
     justify-content: space-between;
   }
- /* End of media scroller */
+ /**************************** End of media scroller */
 }
 
-/* Laptop+ */
+/******************************** Laptop+ */
 @media (min-width: 900px) {
   .new-arrivals,
   .wedges,

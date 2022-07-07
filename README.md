@@ -1,4 +1,5 @@
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/jbrowndesigns/easy-print">
+
 ## JIMMY CHOO OUTLET QUICK VIEW & EASY E-SIGN APP
 
 ### OVERVIEW

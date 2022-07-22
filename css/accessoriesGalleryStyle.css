@@ -68,6 +68,10 @@ cursor: initial;
   padding-top: 1rem;
 }
 
+.strike{
+  text-decoration: line-through;
+}
+
 .accessories {
   max-width: 1440px;
   margin: 0 auto;

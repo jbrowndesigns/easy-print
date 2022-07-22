@@ -63,6 +63,10 @@ p {
 cursor: initial;
 }
 
+.strike{
+  text-decoration: line-through;
+}
+
 .header {
   text-align: center;
   padding-top: 1rem;
@@ -124,7 +128,8 @@ cursor: initial;
 .slides,
 .sporty,
 .boots,
-.mens {
+.mens,
+.markdowns {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px;
@@ -234,7 +239,8 @@ cursor: initial;
   .slides,
   .sporty,
   .boots,
-  .mens {
+  .mens,
+  .markdowns {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
   .style > a > img {

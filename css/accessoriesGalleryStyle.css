@@ -147,6 +147,20 @@ padding-top: 1rem;
   scroll-snap-align: start;
 }
 
+
+/******** Testing */
+.snaps-inline > div:nth-child(3) {
+  scroll-margin-inline-start: 40px;
+}
+/******** Testing */
+.media-scroller > .media-element {
+  scroll-snap-align: start;
+}
+/******** Testing */
+.media-scroller > div:nth-child(3) {
+  scroll-margin-inline-start: 40px;
+}
+
 /********************** End of media scroller */
 
 /************************************** Mobile */

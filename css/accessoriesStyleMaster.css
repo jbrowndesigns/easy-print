@@ -154,8 +154,9 @@ font-weight: bold;
 
   .style-details {
     grid-area: side;
-    /* padding: 400px 0 0 200px; */
-    /* padding-left: 20%; */
+    /* two values were commented out before */
+    padding: 400px 0 0 200px;
+    padding-left: 20%;
     position: fixed;
   }
 

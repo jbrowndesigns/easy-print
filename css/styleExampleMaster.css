@@ -124,7 +124,7 @@ font-weight: bold;
 
   .style-details {
     grid-area: side;
-    padding: 400px 0 0 100px;
+    padding: 275px 0 0 100px;
     position: fixed;
   }
 

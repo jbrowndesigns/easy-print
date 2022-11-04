@@ -103,73 +103,97 @@ body {
   background: #fff;
 }
 
-#mini-nav {
-  /* display: none; */
-}
-
-/* #mini-nav .btn {
-  border-radius: 10px;
-} */
 
 #mini-nav {
   height: 100vh;
   display: grid;
   grid-template-areas: 
-  "womensG mensG"
-  "accessoriesG RDWG";
+  "womensG mensG newShoes"
+  "newBags accessoriesG RDWG";
   align-content: center;
-  gap: 4rem;                    
+  gap: 2rem 4rem; 
+  margin-bottom: 2rem;                   
 }
+
  #mini-nav img {
   height: auto;
   width: 100%;
  }
 
+ .newShoes {
+  grid-area: newShoes;
+  height: 250px;
+  width: 250px;
+}
+
+
 .womensG {
   grid-area: womensG;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
 }
 
 .mensG {
   grid-area: mensG;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
+}
+.newBags {
+  grid-area: newBags;
+  height: 250px;
+  width: 250px;
 }
 
 .accessoriesG{
   grid-area: accessoriesG;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
 }
 
 .RDWG {
   grid-area: RDWG;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
 }
 
 /******************* HOT FIX NEEDS TO BE FLUID RESPONSIVE  */
-@media (max-width: 800px) {
+@media (max-width: 885px) {
 
-  .womensG, .mensG, .accessoriesG, .RDWG {
-    height: 250px;
-    width: 250px;
+  #mini-nav {
+    grid-template-areas: 
+    "newShoes newBags"
+    "womensG mensG"
+    "accessoriesG RDWG";                 
+  } 
+
+  .womensG, .mensG, .accessoriesG, .RDWG, .newBags, .newShoes {
+    height: 200px;
+    width: 200px;
   }
   #mini-nav{
-    gap: 2rem;
+    gap: 2.5rem 2rem;
+    margin: 100px auto;
   }
 }
 
 @media (max-width: 555px) {
 
-  .womensG, .mensG, .accessoriesG, .RDWG {
+  #mini-nav {
+    grid-template-areas: 
+    "newShoes newBags"
+    "womensG mensG"
+    "accessoriesG RDWG";                 
+  } 
+
+  .womensG, .mensG, .accessoriesG, .RDWG, .newBags, .newShoes {
     height: 175px;
     width: 175px;
   }
   #mini-nav{
-    gap: 5rem 1.5rem;
+    gap: 3rem 1.5rem;
   }
+
+
 }
 
 

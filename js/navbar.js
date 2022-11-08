@@ -1,5 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const navHeight = navbar.offsetHeight;
+const closeBtn = document.getElementById('closeModal');
+const modal = document.getElementById('modal');
 
 // Close the dropdown menu after link click
 let menuLink = document.querySelectorAll('.dropdown-item');
@@ -26,3 +28,8 @@ menuLink.forEach((link)=> link.addEventListener('click', ()=>{
   console.log('I was clicked');
   toggler.classList.remove('show');
 }))
+
+
+closeBtn.addEventListener('click', ()=>{
+  modal.classList.add('close');
+});

@@ -31,11 +31,11 @@ let priceArr = Array.from(prices).forEach(function(el){
 
 
 // Add new element with the price here 
-// <p id="sale">Sale: $735</p>
+// <p id="sale">Sale Price: $735</p>
 
   const p = document.createElement('p');
   p.id = 'sale';
-  p.innerHTML = 'Sale: $' + `${prices}` + '!!!';
+  p.innerHTML = 'Sale Price: $' + `${prices}` + '!!!';
   
   
   console.log(p);

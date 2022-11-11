@@ -291,12 +291,14 @@ margin: 10px 0;
   .markdowns {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
-  .style > a > img {
+  .style > a > img, .style > img {
     height: auto;
     width: auto;
     max-height: 300px;
     max-width: 300px;
   }
+
+
 
   .info {
     flex-direction: row;

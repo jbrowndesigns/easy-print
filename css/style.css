@@ -40,6 +40,14 @@ body {
   margin: 3rem 0;
 }
 
+.mty-1 {
+  margin-top: 1rem;
+}
+
+.mby-1 {
+  margin-bottom: 1rem;
+}
+
 /******************************************* MODAL */
 .modal {
   background-color: rgba(0, 0, 0, 0.3);

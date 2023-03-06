@@ -2,6 +2,8 @@
 
 ## JIMMY CHOO OUTLET QUICK VIEW & EASY E-SIGN APP
 
+https://friendly-stonebraker-fc8789.netlify.app/index.html
+
 ### OVERVIEW
 
 This is a personal project of mine that I created to do the following:

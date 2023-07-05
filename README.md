@@ -1,8 +1,10 @@
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/jbrowndesigns/easy-print">
 
 ## JIMMY CHOO OUTLET QUICK VIEW & EASY E-SIGN APP
-
+*Gallery*
 https://friendly-stonebraker-fc8789.netlify.app/index.html
+*Easy Sign*
+https://friendly-stonebraker-fc8789.netlify.app/easysign
 
 ### OVERVIEW
 
